@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=IBM+Plex+Sans:wght@200&family=Roboto&display=swap');
+* {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+.flex-container-header {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.flex-row-first-header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    background-color: whitesmoke;
+}
+.box-first {
+    flex-basis: 7%;
+    margin: auto;
+    padding: 0px;
+}
+.box-second {
+    flex-basis: 93%;
+    margin: auto;
+    padding: 0px;
+}
+.a[href] {
+    flex-grow: 1;
+}
+img.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div > h1 {
+    font: normal bolder 3.5vh 'Aboreto', Verdana;
+    color: #42855B;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+}
+h1 + p {
+    font: normal bold 2.5vh 'Aboreto', Verdana;
+    color: #42855B;
+    vertical-align: top;
+    margin-top: 0px;
+}
+.flex-row-second-header {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: #333;
+}
+.flex-row-second-header a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.flex-row-second-header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.flex-row-second-header a:active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.flex-column-main {
+    display: flex;
+    flex-direction: column;
+}
+.flex-column-first-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.background-box {
+    background-color: rgba(0, 0, 0, 0.647);
+    background-image: url("../image/modern-house-design.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    opacity: 0.9;
+    height: 800px;
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url("../image/modern-house-design.jpg");
+    }
+    50% {
+        background-image: url("../image/3d-rendering-white-cubic-house-with-modern-design.jpg");
+    }
+    100% {
+        background-image: url("../image/signing-of-the-contract-and-payment-for-construction-and-engineering-works.jpg");
+    }
+}
+.flex-column-first-article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 7%;
+    margin-bottom: 0px;
+}
+#home {
+    font: normal bold 450% 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 120px;
+    color: #14a5ab;
+}
+h2 + h2 {
+    font: normal bold 450% 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: white;
+}
+h2[class="home"] + p {
+    font-size: 14pt;
+    color: white;
+}
+.flex-column-second-article {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 7%;
+}
+.second-article {
+    flex-grow: 1;
+    width: 700px;
+}
+.box-side {
+    flex-grow: 1;
+}
+.desain-pic {
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 25px;
+    border: 4px solid #333;
+} 
+#mengapa-kami {
+    font: normal bold 6vh 'Roboto', sans-serif;
+    color: #333333;
+    margin-bottom: 0px;
+}
+.mengapa-kami-container {
+    display: flex;
+    flex-direction: column;
+}
+#tim-professional {
+    display: flex;
+    flex-direction: row;
+}
+#tepat-waktu {
+    display: flex;
+    flex-direction: row;
+}
+#transparan {
+    display: flex;
+    flex-direction: row;
+}
+div > h3 {
+    margin-top: 10px;
+}
+.description-why {
+    /* margin-left: 10px; */
+    margin-right: 25px;
+}
+.icon-box {
+    color: #14a5ab;
+}
+.fa-people-group {
+    /* border: solid 2px #14a5ab; */
+    padding: 5px;
+    margin-right: 55px;
+}
+.fa-clock {
+    /* border: solid 2px #14a5ab; */
+    padding: 5px;
+    margin-right: 55px;
+}
+.fa-magnifying-glass-dollar {
+    /* border: solid 2px #14a5ab; */
+    padding: 5px;
+    margin-right: 55px;
+}
+
+
+
+.flex-column-third-article {
+    display: flex;
+    flex-direction: column;
+}
+#tentang-kami {
+    font: normal bold 6vh 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.paralax {
+    background: url("../image/beautiful-architecture-office-business-building-with-glass-windo.jpg") repeat fixed 100%;
+    background-color: rgba(0, 0, 0, 0.647);
+    background-blend-mode: multiply;
+    opacity: 0.9;
+    padding-left: 7%;
+}
+
+.third-article {
+    padding-top: 20%;
+    color: white;
+}
+
+article p {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h2[id="tentang-kami"] + p {
+    font-size: 14pt;
+    width: 60%;
+}
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20%;
+    color: white;
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div[class="icon-container"] > h3 {
+    font-size: 14pt;
+}
+
+
+.flex-column-fourth-article {
+    display: flex;
+    flex-direction: row;
+    padding-left: 7%;
+}
+.fourth-article {
+    display: flex;
+    flex-direction: column;
+}
+#layanan-kami {
+    font: normal bold 6vh 'Roboto', sans-serif;
+    color: #333333;
+    margin-bottom: 0px;
+}
+#renovasi {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+    border-style: solid;
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 700px;
+    margin-bottom: -70px;
+}
+#bangun-rumah {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+    border-style: solid;
+    text-align: left;
+    margin-right: 700px;
+    margin-bottom: -70px;
+}
+#beli-desain {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+    border-style: solid;
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 700px;
+    margin-bottom: -70px;
+}
+#konsultasi {
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+    border-style: solid;
+    text-align: left;
+    margin-right: 700px;
+}
+h2[class="layanan-kami"] + p {
+    font-size: 14pt;
+    margin-right: 50%;
+    margin-bottom: -80px;
+}
+section[class="daftar-layanan"] > h3 {
+    font-size: 20pt;
+}
+section > p {
+    font-size: 14pt;
+}
+
+
+h3 {
+    font-family: Roboto, sans-serif;
+}
+.flex-column-second-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#kontak-kami {
+    font: normal bold 250% 'Roboto', sans-serif;
+    color: #333333;
+}
+a > button {
+    background: #32C03C;
+    vertical-align: center;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.profile-pic {
+    width: 200px;
+    max-height: 300px;
+    font-weight: bold;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333;
+}
+footer > p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+@media screen and (max-width: 513px) {
+    .box-first {
+        flex-basis: 25%;
+    }
+    article h2 {
+        font-size: 34px;
+        line-height: 1.3em;
+    }
+    #home {
+        font-size: 34px;
+        line-height: 1.3em;
+    }
+    .desain-pic {
+        display: none;
+    }
+    .icon-box {
+        font-size: xx-small;
+        padding-right: 25px;
+    }
+    .description-why {
+        margin-left: 0px;
+    }
+    div > h3 {
+        margin-top: 3px;
+    }
+    h2[id="tentang-kami"] + p {
+        width: 80%;
+    }
+    .icons-container {
+        font-size: 2vw;
+    }
+    .icon-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    div[class = "icon-container"] > h3 {
+        font-size: 2.5vw;
+    }
+    h2[class="layanan-kami"] + p {
+        margin-right: 7%;
+        margin-bottom: 3%;
+    }
+    #renovasi {
+        padding: 5px;
+        box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+        border-style: solid;
+        text-align: right;
+        margin: 7%;
+    }
+    #bangun-rumah {
+        padding: 5px;
+        box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+        border-style: solid;
+        text-align: left;
+        margin: 7%;
+    }
+    #beli-desain {
+        padding: 5px;
+        box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+        border-style: solid;
+        text-align: right;
+        margin: 7%;
+    }
+    #konsultasi {
+        padding: 5px;
+        box-shadow: 0px 0px 30px 0px rgb(35 25 1 / 10%);
+        border-style: solid;
+        text-align: left;
+        margin: 7%;
+    }
+
+}
